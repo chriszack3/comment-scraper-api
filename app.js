@@ -7,9 +7,10 @@ const port = process.env.PORT || 3000
 
 app.get('/', async (req, res) => {
     runScraper().then((data) => {
-        res.status(200).json({ data: data })
+        res.send({ data: data })
     }).catch((err) => {
-        res.status(500).json({ error: err })
+        console.log(err)
+        res.send({ error: err })
     })  
   // res.send('Hello World!')
 })
