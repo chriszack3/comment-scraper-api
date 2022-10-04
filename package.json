@@ -6,11 +6,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "apt-get update && apt-get install -y libnss3 && node app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chromium": "^3.0.3",
     "express": "^4.18.1",
     "puppeteer": "^18.0.5"
   }
