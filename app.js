@@ -1,5 +1,5 @@
 import express from 'express'
-import runScraper from './lib/getComments.js'
+import runScraper from './lib/functions/getComments.js'
 
 const app = express()
 const port = process.env.PORT || 3000
