@@ -6,7 +6,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "RUN apt-get update && apt-get install -y libnss3 && node app.js"
   },
   "author": "",
   "license": "ISC",
