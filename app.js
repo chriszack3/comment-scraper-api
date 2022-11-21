@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 
 
 app.get('/', async (req, res) => {
-    runScraper().then((data) => {
+    runScraper(req?.query?.sub).then((data) => {
         res.send({ data: data })
     }).catch((err) => {
         console.log(err)
